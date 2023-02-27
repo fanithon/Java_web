@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select&optgroup</title>
+</head>
+    <!-- select 태그 사용시 콤보박스(combobox) 생성가능-->
+    <!-- 콤보박스에 항목 추가시 option 태그 사용-->
+    <!-- 항목들을 그룹으로 묶고싶다면 optgroup 태그를 사용-->
+<form action="#" methon="post">
+    <fieldset>
+    <legend>개인 정보 입력(Select)</legend>    
+    <select name="city" id="city" size="3">
+        <option value="강남구">강남구</option>
+        <option value="강북구">강북구</option>
+        <option value="서초구">서초구</option>
+        <option value="중원구">중원구</option>
+        <option value="중랑구">중랑구</option>
+        <option value="분당구">분당구</option>
+    </select>
+    <input type="submit" value="등록">
+    </fieldset>
+    </form>
+<form action="#" methon="post">
+    <fieldset>
+    <legend>개인 정보 입력(Select&optgroup)</legend>    
+    <label for="city">지역<</label>
+    <select name="city" id="city" size="5">
+        <optgroup label="서울시">
+            <option value="강남구">강남구</option>
+            <option value="강북구">강북구</option>
+            <option value="서초구">서초구</option>
+            <option value="중랑구">중랑구</option>
+        </optgroup>
+        <optgroup label="경기도성남시">
+            <option value="중원구">중원구</option>
+            <option value="분당구">분당구</option>
+        </optgroup>
+    </select>
+    <input type="submit" value="등록">
+    </fieldset>
+    </form>
+<form action="#" methon="post">
+    <fieldset>
+    <legend>알게 된 경로 선택(Select&multiple)</legend>    
+    <label for="path">경로<</label>
+    <select name="path" id="path" multiple>
+        <optgroup label="SNS">
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="Naver Blog">Naver Blog</option>
+        </optgroup>
+        <optgroup label="etc">
+            <option value="Email">이메일</option>
+            <option value="TV광고">TV광고</option>
+            <option value="Youtube광고">Youtube광고</option>
+        </optgroup>
+    </select>
+    <input type="submit" value="등록">
+    </fieldset>
+    </form>
+<form action="#" methon="post">
+    <fieldset>
+    <legend>알게 된 경로 선택(Select&multiple&)</legend>    
+    <label for="path">경로<</label>
+    <select name="path" id="path" multiple>
+        <optgroup label="SNS">
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram" selected>Instagram</option>
+            <option value="Naver Blog">Naver Blog</option>
+        </optgroup>
+        <optgroup label="etc">
+            <option value="Email">이메일</option>
+            <option value="TV광고">TV광고</option>
+            <option value="Youtube광고">Youtube광고</option>
+        </optgroup>
+    </select>
+    <input type="submit" value="등록">
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그에서 사용할 수 있는 추가 속성</title>
+</head>
+    <!-- 상호작용 요소를 비활성화 (input, textarea, select,button에 사용)-->
+    <!-- input + button 태그 비활성화-->
+    <!-- disabled 속성-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend><strong>disabled</strong> - 비활성화</legend>
+        <input type="text" disabled><br>
+        <button type="button" disabled>비활성</button>
+        </fieldset>
+    </form>
+    <!-- readonly 속성-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend> <strong>readonly</strong> 입력 불가</legend>
+            <input type="password" readonly><br>
+            <textarea readonly></textarea>
+        </fieldset>
+    </form>
+    <!--maxlength 속성-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend><strong>maxlength</strong>입가능 글자 수 제한</legend>
+            <input type="url" maxlength="4"><br>
+            <textarea maxlength="4"></textarea>
+        </fieldset>
+    <!--checked 속성-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend><strong>checked</strong>요소 선택 상태 표시</legend>
+            <fieldset>
+                <legend>좋아하는 과일</legend>
+                    <input type="checkbox" id="banana" name="banana" value="banana">
+                    <label for="banana">banana</label><br>
+                    <input type="checkbox" id="apple" name="apple" value="apple">
+                    <label for="banana">apple</label><br>
+                    <input type="checkbox" id="orange" name="orange" value="orange">
+                    <label for="banana">orange</label><br>
+            </fieldset>
+        </fieldset>
+    <!--placeholder 속성-->
+    <form action="#" method="post">
+        <fieldset>
+            <legend><strong>palceholder</strong> 어떤 값을 입력하면 되는지 힌트를 줌</legend>
+            <input placeholder="010-0000-0000" name="전화번호입력">
+        </fieldset>                
+</body>
+</html>
