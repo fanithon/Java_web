@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 표 열 그룹화 col / colgroup 태그 사용-->
+    <!-- col = 하나의 열 그룹 / colgroup span속성과 함께 2개 이상-->
+    <table>
+        <col style="width:88px">
+        <colgroup span="2" style="width:150px"></colgroup>
+        <col style="width:100px">
+            <tr>
+                <th>번호</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>가격</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>콜라</td>
+                <td>1ea</td>
+                <td>1500원</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>사이다</td>
+                <td>2ea</td>
+                <td rowspan="2">1000원</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>탄산수</td>
+                <td>3ea</td>
+            </tr>
+            <td>총금액</td>
+            <td rowspan="1">6500원</td>
+    </table>
+</body>
+</html>
