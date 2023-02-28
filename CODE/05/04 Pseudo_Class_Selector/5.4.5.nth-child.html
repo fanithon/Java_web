@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-child</title>
+    <style>
+        p:nth-child(){color:red;}
+    </style>
+</head>
+<body>
+    <p>lorem0</p> <!-- 부모인 body 태그의 첫 번째 자식 요소가 p 태그 = 스타일 적용-->
+    <div>
+        <p>lorem1</p> <!-- 부모인 div 태그의 첫 번째 자식 요소가 p 태그 = 스타일 적용-->
+        <p>lorem2</p> 
+    </div>
+    <div>
+        <p>lorem3</p> <!-- 부모인 div 태그의 첫 번째 자식요소가 p 태그 = 적용-->
+        <p>lorem4</p>
+    </div>
+</body>
+</html>

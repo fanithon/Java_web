@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input_type_pseudo</title>
+    <style>
+        /* (input:focus)입력 요소에 커서가 활성화 되면 스타일을 적용 */
+        input:focus{color:red;}
+        /* (input:checked)체크 박스가 표시되면 스타일 적용*/
+        input:checked + label{color:red;}
+        /* (input:disabled) 상호작용 요소가 비활성화되어있으면 스타일 적용*/
+        input:disabled,button:disabled{background-color: #ccc;}
+        /* (input:enabled) 상호작용 요소가 활성화되어있으면 적용*/
+        input:enabled,button:enabled{background-color: aquamarine;}
+    </style>
+</head>
+<body>
+    <input type="text">
+    <input type="checkbox" aria-label=""> 체크박스
+    <button disabled>비활성화버튼</button>
+    <input type="text">
+    <button>활성화버튼</button>
+</body>
+</html>
