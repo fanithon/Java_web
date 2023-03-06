@@ -12,3 +12,5 @@ let t = 10;
 t **= 2; // 100(t = t ** 2)
 
 console.log(x,y,z,u,v,t);
+
+
